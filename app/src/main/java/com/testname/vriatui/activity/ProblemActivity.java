@@ -30,15 +30,16 @@ public class ProblemActivity extends AppCompatActivity {
         setContentView(R.layout.problem);
         ((VriatuiApplication) getApplication()).getApiComponent().inject(this);
 
-        findViewById(R.id.allergy).setOnClickListener(sendIncidentListener());
-        findViewById(R.id.bleeding).setOnClickListener(sendIncidentListener());
-        findViewById(R.id.burn).setOnClickListener(sendIncidentListener());
-        findViewById(R.id.cold).setOnClickListener(sendIncidentListener());
-        findViewById(R.id.fracture).setOnClickListener(sendIncidentListener());
-        findViewById(R.id.head).setOnClickListener(sendIncidentListener());
-        findViewById(R.id.heart).setOnClickListener(sendIncidentListener());
-        findViewById(R.id.intestines).setOnClickListener(sendIncidentListener());
-        findViewById(R.id.other).setOnClickListener(sendIncidentListener());
+        View.OnClickListener listener = sendIncidentListener();
+        findViewById(R.id.allergy).setOnClickListener(listener);
+        findViewById(R.id.bleeding).setOnClickListener(listener);
+        findViewById(R.id.burn).setOnClickListener(listener);
+        findViewById(R.id.cold).setOnClickListener(listener);
+        findViewById(R.id.fracture).setOnClickListener(listener);
+        findViewById(R.id.head).setOnClickListener(listener);
+        findViewById(R.id.heart).setOnClickListener(listener);
+        findViewById(R.id.intestines).setOnClickListener(listener);
+        findViewById(R.id.other).setOnClickListener(listener);
     }
 
     @NonNull
@@ -46,7 +47,8 @@ public class ProblemActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendIncident(incident(v.getResources().getResourceEntryName(v.getId())));
+                String problem = v.getResources().getResourceEntryName(v.getId());
+                sendIncident(incident(problem));
             }
         };
     }

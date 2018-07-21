@@ -1,5 +1,7 @@
 package com.testname.vriatui.model;
 
+import java.io.Serializable;
+
 import lombok.Data;
 import lombok.Value;
 
@@ -12,7 +14,7 @@ public class IncidentRequest {
     String problem;
 
     @Value
-    public class Coordinates {
+    public static class Coordinates implements Serializable {
         double x;
         double y;
     }
