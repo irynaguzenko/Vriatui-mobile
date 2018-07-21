@@ -30,7 +30,15 @@ public class ProblemActivity extends AppCompatActivity {
         setContentView(R.layout.problem);
         ((VriatuiApplication) getApplication()).getApiComponent().inject(this);
 
+        findViewById(R.id.allergy).setOnClickListener(sendIncidentListener());
+        findViewById(R.id.bleeding).setOnClickListener(sendIncidentListener());
+        findViewById(R.id.burn).setOnClickListener(sendIncidentListener());
+        findViewById(R.id.cold).setOnClickListener(sendIncidentListener());
+        findViewById(R.id.fracture).setOnClickListener(sendIncidentListener());
+        findViewById(R.id.head).setOnClickListener(sendIncidentListener());
         findViewById(R.id.heart).setOnClickListener(sendIncidentListener());
+        findViewById(R.id.intestines).setOnClickListener(sendIncidentListener());
+        findViewById(R.id.other).setOnClickListener(sendIncidentListener());
     }
 
     @NonNull
@@ -53,7 +61,6 @@ public class ProblemActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<IdResponse> call, Throwable t) {
                 Log.i("Call", "Failure");
-
             }
         });
     }

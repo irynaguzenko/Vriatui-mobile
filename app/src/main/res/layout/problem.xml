@@ -45,14 +45,14 @@
 
 
         <ImageView
-            android:id="@+id/bone"
+            android:id="@+id/fracture"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             android:layout_rowWeight="1"
             android:background="@color/lighterBlue"
-            android:src="@drawable/problem_bonebreak" />
+            android:src="@drawable/problem_fracture" />
 
         <ImageView
             android:id="@+id/allergy"
@@ -76,14 +76,14 @@
 
 
         <ImageView
-            android:id="@+id/blood"
+            android:id="@+id/bleeding"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             android:layout_rowWeight="1"
             android:background="@color/lighterBlue"
-            android:src="@drawable/problem_blood" />
+            android:src="@drawable/problem_bleeding" />
 
         <ImageView
             android:id="@+id/cold"
