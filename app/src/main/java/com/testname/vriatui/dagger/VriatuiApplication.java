@@ -18,4 +18,8 @@ public class VriatuiApplication extends Application {
                 .apiModule(new ApiModule(this.getApplicationContext()))
                 .build();
     }
+
+    public ApiComponent getApiComponent() {
+        return apiComponent;
+    }
 }
