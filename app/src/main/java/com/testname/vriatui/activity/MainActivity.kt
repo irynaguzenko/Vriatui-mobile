@@ -1,20 +1,18 @@
-package com.testname.vriatui
+package com.testname.vriatui.activity
 
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import com.testname.vriatui.api.ApiClient
-import com.testname.vriatui.api.IncidentApi
-import com.testname.vriatui.api.ProfileApi
+import com.testname.vriatui.R
 
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val incidentApi = ApiClient.getClient().create(IncidentApi::class.java)
-    val profileApi = ApiClient.getClient().create(ProfileApi::class.java)
+//    val incidentApi = ApiClient.getClient().create(IncidentApi::class.java)
+//    val profileApi = ApiClient.getClient().create(ProfileApi::class.java)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

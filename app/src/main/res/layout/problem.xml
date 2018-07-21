@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightBlue">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:stretchMode="columnWidth">
+
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:src="@drawable/problem_heart" />
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:src="@drawable/problem_head" />
+
+        <ImageView
+            android:id="@+id/intestines"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:src="@drawable/problem_intestines" />
+
+
+        <ImageView
+            android:id="@+id/bone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:src="@drawable/problem_bonebreak" />
+
+        <ImageView
+            android:id="@+id/allergy"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:src="@drawable/problem_allergy" />
+
+        <ImageView
+            android:id="@+id/burn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:src="@drawable/problem_burn" />
+
+
+        <ImageView
+            android:id="@+id/blood"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:src="@drawable/problem_blood" />
+
+        <ImageView
+            android:id="@+id/cold"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:src="@drawable/problem_cold" />
+
+        <ImageView
+            android:id="@+id/other"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:src="@drawable/problem_other" />
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>
