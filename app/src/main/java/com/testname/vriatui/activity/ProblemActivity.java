@@ -1,5 +1,6 @@
 package com.testname.vriatui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,8 +11,9 @@ import android.view.View;
 import com.testname.vriatui.R;
 import com.testname.vriatui.api.IncidentApi;
 import com.testname.vriatui.dagger.VriatuiApplication;
-import com.testname.vriatui.model.IdResponse;
+import com.testname.vriatui.model.Address;
 import com.testname.vriatui.model.IncidentRequest;
+import com.testname.vriatui.model.IncidentResponse;
 
 import javax.inject.Inject;
 
@@ -53,26 +55,39 @@ public class ProblemActivity extends AppCompatActivity {
         };
     }
 
-    private void sendIncident(IncidentRequest incidentRequest) {
-        incidentApi.incidentHappend(incidentRequest).enqueue(new Callback<IdResponse>() {
+    private void sendIncident(final IncidentRequest incidentRequest) {
+        incidentApi.incidentHappend(incidentRequest).enqueue(new Callback<IncidentResponse>() {
             @Override
-            public void onResponse(Call<IdResponse> call, Response<IdResponse> response) {
-                Log.i("Call", "Success " + response.body().getId());
+            public void onResponse(Call<IncidentResponse> call, Response<IncidentResponse> response) {
+                IncidentResponse incidentResponse = response.body();
+                if (incidentResponse != null) {
+                    Log.i("Call", "Success " + incidentResponse.getId());
+                    goToSuccessMap(incidentResponse.getAddress().getLocation());
+                }
             }
 
             @Override
-            public void onFailure(Call<IdResponse> call, Throwable t) {
+            public void onFailure(Call<IncidentResponse> call, Throwable t) {
                 Log.i("Call", "Failure");
             }
         });
+    }
+
+    private void goToSuccessMap(Address.Location location) {
+        Intent intent = new Intent(ProblemActivity.this, SuccessMapActivity.class);
+        intent.putExtra("location", location);
+        startActivity(intent);
     }
 
     @NonNull
     private IncidentRequest incident(String problem) {
         IncidentRequest incidentRequest = new IncidentRequest();
         incidentRequest.setProblem(problem);
-        incidentRequest.setProfileId("5b53666f45d9280004f04a52");
-        incidentRequest.setHappenAtHome(true);
+        incidentRequest.setProfileId("5b53b21d0e89ab00044c7fcc");
+
+        Intent intent = getIntent();
+        incidentRequest.setHappenAtHome(intent.getBooleanExtra("happenAtHome", false));
+        incidentRequest.setLocation((IncidentRequest.Location) intent.getSerializableExtra("geoPosition"));
         return incidentRequest;
     }
 }

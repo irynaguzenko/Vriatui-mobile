@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightBlue">
@@ -7,9 +8,11 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:columnCount="3"
-        android:rowCount="3"
-        android:stretchMode="columnWidth">
+        android:columnCount="2"
+        android:rowCount="10"
+        android:stretchMode="columnWidth"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
 
         <ImageView
@@ -17,30 +20,78 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
-            android:layout_margin="8dp"
             android:layout_rowWeight="1"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/lighterBlue"
             android:src="@drawable/problem_heart" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:text="СЕРЦЕ"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textAlignment="textStart"/>
 
         <ImageView
             android:id="@+id/head"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
-            android:layout_margin="8dp"
             android:layout_rowWeight="1"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/lighterBlue"
             android:src="@drawable/problem_head" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:text="ГОЛОВА"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textAlignment="textStart"/>
 
         <ImageView
             android:id="@+id/intestines"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
-            android:layout_margin="8dp"
             android:layout_rowWeight="1"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/lighterBlue"
             android:src="@drawable/problem_intestines" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:text="ЖИВІТ"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textAlignment="textStart"/>
 
 
         <ImageView
@@ -48,30 +99,52 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
-            android:layout_margin="8dp"
             android:layout_rowWeight="1"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/lighterBlue"
             android:src="@drawable/problem_fracture" />
 
-        <ImageView
-            android:id="@+id/allergy"
+        <TextView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_margin="8dp"
+            android:layout_columnWeight="2"
             android:layout_rowWeight="1"
             android:background="@color/lighterBlue"
-            android:src="@drawable/problem_allergy" />
+            android:text="ПЕРЕЛОМ"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textAlignment="textStart"/>
 
         <ImageView
             android:id="@+id/burn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
-            android:layout_margin="8dp"
             android:layout_rowWeight="1"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/lighterBlue"
             android:src="@drawable/problem_burn" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:text="ОПІК"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textAlignment="textStart"/>
 
 
         <ImageView
@@ -79,30 +152,53 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
-            android:layout_margin="8dp"
             android:layout_rowWeight="1"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/lighterBlue"
             android:src="@drawable/problem_bleeding" />
 
-        <ImageView
-            android:id="@+id/cold"
+        <TextView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_margin="8dp"
+            android:layout_columnWeight="2"
             android:layout_rowWeight="1"
             android:background="@color/lighterBlue"
-            android:src="@drawable/problem_cold" />
+            android:text="КРОВОТЕЧА"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:fontFamily="Arial"
+            android:textAlignment="textStart"/>
 
         <ImageView
             android:id="@+id/other"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
-            android:layout_margin="8dp"
             android:layout_rowWeight="1"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/lighterBlue"
             android:src="@drawable/problem_other" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            android:background="@color/lighterBlue"
+            android:text="ІНШЕ"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textAlignment="textStart"/>
     </GridLayout>
 
 </android.support.constraint.ConstraintLayout>

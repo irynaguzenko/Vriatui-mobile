@@ -41,7 +41,7 @@ public class LocationActivity extends AppCompatActivity {
         return intent;
     }
 
-    public IncidentRequest.Coordinates getGeoPosition() {
-        return new IncidentRequest.Coordinates(1, 2);
+    public IncidentRequest.Location getGeoPosition() {
+        return new IncidentRequest.Location(50.4049258, 30.6796192);
     }
 }

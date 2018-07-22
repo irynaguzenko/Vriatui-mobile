@@ -8,14 +8,18 @@ import lombok.Value;
 @Data
 public class IncidentRequest {
     String profileId;
-    Coordinates location;
+    Location location;
     Address happenInAddress;
     boolean happenAtHome;
     String problem;
 
     @Value
-    public static class Coordinates implements Serializable {
-        double x;
-        double y;
+    public static class Location implements Serializable {
+        String type = "Point";
+        double[] coordinates;
+
+        public Location(double x, double y) {
+            coordinates = new double[]{x, y};
+        }
     }
 }
