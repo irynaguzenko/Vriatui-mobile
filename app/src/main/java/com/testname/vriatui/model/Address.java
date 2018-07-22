@@ -4,7 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.io.Serializable;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 public class Address {
@@ -17,6 +19,8 @@ public class Address {
     Location location;
 
     @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Location implements Serializable {
         String type;
