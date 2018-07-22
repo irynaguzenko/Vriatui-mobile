@@ -33,10 +33,8 @@ public class ProblemActivity extends AppCompatActivity {
         ((VriatuiApplication) getApplication()).getApiComponent().inject(this);
 
         View.OnClickListener listener = sendIncidentListener();
-        findViewById(R.id.allergy).setOnClickListener(listener);
         findViewById(R.id.bleeding).setOnClickListener(listener);
         findViewById(R.id.burn).setOnClickListener(listener);
-        findViewById(R.id.cold).setOnClickListener(listener);
         findViewById(R.id.fracture).setOnClickListener(listener);
         findViewById(R.id.head).setOnClickListener(listener);
         findViewById(R.id.heart).setOnClickListener(listener);

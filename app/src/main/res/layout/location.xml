@@ -13,7 +13,6 @@
 
 
         <ImageView
-            android:id="@+id/house"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -25,6 +24,7 @@
             android:src="@drawable/location_house" />
 
         <TextView
+            android:id="@+id/house"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="2"
@@ -39,6 +39,7 @@
             android:textAlignment="center"/>
 
         <TextView
+            android:id="@+id/geoPosition"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="2"
@@ -53,7 +54,6 @@
             android:textAlignment="center"/>
 
         <ImageView
-            android:id="@+id/geoPosition"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
