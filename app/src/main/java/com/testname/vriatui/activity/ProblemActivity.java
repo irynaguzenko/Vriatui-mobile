@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import com.testname.vriatui.R;
 import com.testname.vriatui.api.IncidentApi;
@@ -47,7 +48,7 @@ public class ProblemActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String problem = v.getResources().getResourceEntryName(v.getId());
+                String problem = ((TextView) v).getText().toString();
                 sendIncident(incident(problem));
             }
         };
