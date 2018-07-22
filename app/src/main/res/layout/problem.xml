@@ -1,204 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightBlue">
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:columnCount="2"
-        android:rowCount="10"
-        android:stretchMode="columnWidth"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+    android:background="@color/lightBlue"
+    android:columnCount="2"
+    android:rowCount="10"
+    android:stretchMode="columnWidth"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
 
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/lighterBlue"
-            android:src="@drawable/problem_heart" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:padding="10dp"
+        android:src="@drawable/problem_heart" />
 
-        <TextView
-            android:id="@+id/heart"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="2"
-            android:layout_rowWeight="1"
-            android:background="@color/lighterBlue"
-            android:text="СЕРЦЕ"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:textAlignment="textStart"/>
+    <TextView
+        android:id="@+id/heart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:gravity="center|start"
+        android:padding="10dp"
+        android:text="СЕРЦЕ"
+        android:textSize="18sp" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/lighterBlue"
-            android:src="@drawable/problem_head" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:padding="10dp"
+        android:src="@drawable/problem_head" />
 
-        <TextView
-            android:id="@+id/head"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="2"
-            android:layout_rowWeight="1"
-            android:background="@color/lighterBlue"
-            android:text="ГОЛОВА"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:textAlignment="textStart"/>
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:gravity="center|start"
+        android:padding="10dp"
+        android:text="ГОЛОВА"
+        android:textSize="18sp" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/lighterBlue"
-            android:src="@drawable/problem_intestines" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:padding="10dp"
+        android:src="@drawable/problem_intestines" />
 
-        <TextView
-            android:id="@+id/intestines"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="2"
-            android:layout_rowWeight="1"
-            android:background="@color/lighterBlue"
-            android:text="ЖИВІТ"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:textAlignment="textStart"/>
+    <TextView
+        android:id="@+id/intestines"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:gravity="center|start"
+        android:padding="10dp"
+        android:text="ЖИВІТ"
+        android:textSize="18sp" />
 
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/lighterBlue"
-            android:src="@drawable/problem_fracture" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:padding="10dp"
+        android:src="@drawable/problem_fracture" />
 
-        <TextView
-            android:id="@+id/fracture"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="2"
-            android:layout_rowWeight="1"
-            android:background="@color/lighterBlue"
-            android:text="ПЕРЕЛОМ"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:textAlignment="textStart"/>
+    <TextView
+        android:id="@+id/fracture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:gravity="center|start"
+        android:padding="10dp"
+        android:text="ПЕРЕЛОМ"
+        android:textSize="18sp" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/lighterBlue"
-            android:src="@drawable/problem_burn" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:padding="10dp"
+        android:src="@drawable/problem_burn" />
 
-        <TextView
-            android:id="@+id/burn"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="2"
-            android:layout_rowWeight="1"
-            android:background="@color/lighterBlue"
-            android:text="ОПІК"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:textAlignment="textStart"/>
+    <TextView
+        android:id="@+id/burn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:gravity="center|start"
+        android:padding="10dp"
+        android:text="ОПІК"
+        android:textSize="18sp" />
 
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/lighterBlue"
-            android:src="@drawable/problem_bleeding" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:padding="10dp"
+        android:src="@drawable/problem_bleeding" />
 
-        <TextView
-            android:id="@+id/bleeding"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="2"
-            android:layout_rowWeight="1"
-            android:background="@color/lighterBlue"
-            android:text="КРОВОТЕЧА"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:fontFamily="Arial"
-            android:textAlignment="textStart"/>
+    <TextView
+        android:id="@+id/bleeding"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:gravity="center|start"
+        android:padding="10dp"
+        android:text="КРОВОТЕЧА"
+        android:textSize="18sp" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/lighterBlue"
-            android:src="@drawable/problem_other" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:padding="10dp"
+        android:src="@drawable/problem_other" />
 
-        <TextView
-            android:id="@+id/other"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="2"
-            android:layout_rowWeight="1"
-            android:background="@color/lighterBlue"
-            android:text="ІНШЕ"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:textAlignment="textStart"/>
-    </GridLayout>
-
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_rowWeight="1"
+        android:background="@color/lighterBlue"
+        android:gravity="center|start"
+        android:padding="10dp"
+        android:text="ІНШЕ"
+        android:textSize="18sp" />
+</GridLayout>

@@ -35,11 +35,8 @@ public class SuccessMapActivity extends AppCompatActivity implements OnMapReadyC
         Address.Location location = (Address.Location) getIntent().getSerializableExtra("location");
         LatLng latLng = new LatLng(location.getX(), location.getY());
         googleMap.addMarker(new MarkerOptions()
-                        .position(latLng)
-                        .icon(BitmapDescriptorFactory.defaultMarker(HUE_RED))
-//                .title("KPI Maths Olympiad")
-        )
-        ;
+                .position(latLng)
+                .icon(BitmapDescriptorFactory.defaultMarker(HUE_RED)));
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15));
     }
 }
